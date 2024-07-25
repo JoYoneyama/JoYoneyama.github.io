@@ -111,7 +111,10 @@ hr {
   color: inherit;
   border: 0;
   border-top: 1px solid;
-  opacity: 0.25;
+  opacity: 0.35;
+  width: 80%;
+  margin: 0 auto;
+  color: var(--bs-red);
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -11048,7 +11051,18 @@ footer.footer .social-link:hover {
     font-size: 5.5rem;
   }
 }
-
+.perfil{
+  width: 200px;
+  height: 200px;
+  border: 4px solid var(--bs-red);
+  border-radius: 50%;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.sobre-mim{
+  text-indent: 100px;
+  text-align: justify;
+}
 .portfolio-item {
   display: block;
   position: relative;
