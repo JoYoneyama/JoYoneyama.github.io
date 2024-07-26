@@ -2849,6 +2849,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
+  opacity: 0;
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--bs-red);
   --bs-btn-border-color: var(--bs-red);
@@ -7656,7 +7657,7 @@ textarea.form-control-lg {
 }
 
 .mb-1 {
-
+  opacity: 0;
   margin-bottom: 0.25rem !important;
 }
 
@@ -7674,6 +7675,9 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+h3.mb-5{
+  opacity: 0;
 }
 
 .mb-auto {
@@ -10972,6 +10976,7 @@ footer.footer {
   padding-bottom: 5rem;
 }
 footer.footer .social-link {
+  opacity: 0;
   display: block;
   text-decoration: none;
   height: 4rem;
@@ -11052,6 +11057,7 @@ footer.footer .social-link:hover {
   }
 }
 .perfil{
+  opacity: 0;
   width: 200px;
   height: 200px;
   border: 4px solid var(--bs-red);
@@ -11064,6 +11070,7 @@ footer.footer .social-link:hover {
   text-align: justify;
 }
 .portfolio-item {
+  opacity: 0;
   display: block;
   position: relative;
   overflow: hidden;
@@ -11129,6 +11136,7 @@ footer.footer .social-link:hover {
 }
 
 .service-icon {
+  opacity: 0;
   background-color: #fff;
   color: #1D809F;
   height: 7rem;
@@ -11137,4 +11145,54 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+@keyframes animacao{
+  from{
+    opacity: 0;
+    transform: translateY(-15px) translateX(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.mb-1.in-view{
+  animation: animacao 2s forwards;  
+}
+.mb-5.in-view{
+  animation: animacao 2s forwards;
+}
+.btn.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.2s;
+}
+.perfil.in-view{
+  animation: animacao 2s forwards;
+}
+.service-icon.a.in-view{
+  animation: animacao 2s forwards;
+}
+.service-icon.b.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.2s;
+}
+.service-icon.c.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.4s;
+}
+.portfolio-item.in-view{
+  animation: animacao 2s forwards;
+}
+.social-link.a.in-view{
+  animation: animacao 2s forwards;
+}
+.social-link.b.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.3s;
+}
+.social-link.c.in-view{
+  animation: animacao 2s forwards;
+  animation-delay: 0.6s;
 }
